@@ -6,13 +6,11 @@ const Home = ({ instructors, goTo }) => {
     <>
       <h2>When in doubt, ask for help!</h2>
       {instructors.map((instructor) => (
-        <Link to="">
-          <InstructorTag
-            instructor={instructor}
-            key={instructor.slug}
-            goTo={goTo}
-          />
-        </Link>
+        <InstructorTag
+          instructor={instructor}
+          key={instructor.slug}
+          goTo={goTo}
+        />
       ))}
     </>
   );
